@@ -1,10 +1,10 @@
 === WP-Print ===
-Contributors: GamerZ, aaroncampbell
-Donate link: http://lesterchan.net/site/donation/
-Tags: print, printer, wp-print
-Requires at least: 2.8
-Tested up to: 3.5.1
-Stable tag: trunk
+Contributors: GamerZ  
+Donate link: http://lesterchan.net/site/donation/  
+Tags: print, printer, wp-print  
+Requires at least: 2.8  
+Tested up to: 3.9  
+Stable tag: 2.53  
 
 Displays a printable version of your WordPress blog's post/page.
 
@@ -12,22 +12,11 @@ Displays a printable version of your WordPress blog's post/page.
 
 Displays a printable version of your WordPress blog's post/page.
 
-= Previous Versions =
-* [WP-Print 2.50 For WordPress 2.7.x And 2.8.x](http://downloads.wordpress.org/plugin/wp-print.2.50.zip "WP-Print 2.50 For WordPress 2.7.x And 2.8.x")
-* [WP-Print 2.50 For WordPress 2.7.x And 2.8.x](http://downloads.wordpress.org/plugin/wp-print.2.50.zip "WP-Print 2.50 For WordPress 2.7.x And 2.8.x")
-* [WP-Print 2.31 For WordPress 2.5.x And 2.6.x](http://downloads.wordpress.org/plugin/wp-print.2.31.zip "WP-Print 2.31 For WordPress 2.5.x And 2.6.x")
-* [WP-Print 2.20 For WordPress 2.1.x, 2.2.x And 2.3.x](http://downloads.wordpress.org/plugin/wp-print.2.20.zip "WP-Print 2.20 For WordPress 2.1.x, 2.2.x And 2.3.x")
-* [WP-Print 2.06 For WordPress 2.0.x](http://downloads.wordpress.org/plugin/wp-print.2.06.zip "WP-Print 2.06 For WordPress 2.0.x")
-* [WP-Print 2.00 For WordPress 1.5.2](http://downloads.wordpress.org/plugin/wp-print.2.00.zip "WP-Print 2.00 For WordPress 1.5.2")
-
 = Development =
-* [http://dev.wp-plugins.org/browser/wp-print/](http://dev.wp-plugins.org/browser/wp-print/ "http://dev.wp-plugins.org/browser/wp-print/")
+* [https://github.com/lesterchan/wp-print](https://github.com/lesterchan/wp-print "https://github.com/lesterchan/wp-print")
 
 = Translations =
 * [http://dev.wp-plugins.org/browser/wp-print/i18n/](http://dev.wp-plugins.org/browser/wp-print/i18n/ "http://dev.wp-plugins.org/browser/wp-print/i18n/")
-
-= Support Forums =
-* [http://forums.lesterchan.net/index.php?board=18.0](http://forums.lesterchan.net/index.php?board=18.0 "http://forums.lesterchan.net/index.php?board=18.0")
 
 = Credits =
 * Icons courtesy of [FamFamFam](http://www.famfamfam.com/)
@@ -81,7 +70,7 @@ Once installed take the following steps to set it up:
 1. Find: `<?php while (have_posts()) : the_post(); ?>`
 1. Add Anywhere Below It: `<?php if(function_exists('wp_print')) { print_link(); } ?>`
 
-Simply add this code <strong>inside the loop = where you want the print link to display:
+Simply add this code <strong>inside the loop ### where you want the print link to display:
 <code>
 if(function_exists('wp_print')) {
 	print_link();
@@ -103,6 +92,9 @@ if(function_exists('wp_print')) {
 
 
 == Changelog ==
+
+= 2.53 =
+* FIXED: Use get_stylesheet_directory() instead of TEMPLATEPATH
 
 = 2.52 =
 * FIXED: Added nonce to Options. Credits to Charlie Eriksen via Secunia SVCRP.
