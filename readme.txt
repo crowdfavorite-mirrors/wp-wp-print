@@ -3,26 +3,25 @@ Contributors: GamerZ
 Donate link: http://lesterchan.net/site/donation/  
 Tags: print, printer, wp-print  
 Requires at least: 2.8  
-Tested up to: 3.9  
-Stable tag: 2.53  
+Tested up to: 4.1  
+Stable tag: 2.55  
 
 Displays a printable version of your WordPress blog's post/page.
 
 == Description ==
 
-Displays a printable version of your WordPress blog's post/page.
+= Build Status =
+[![Build Status](https://travis-ci.org/lesterchan/wp-print.svg?branch=master)](https://travis-ci.org/lesterchan/wp-print)
 
 = Development =
-* [https://github.com/lesterchan/wp-print](https://github.com/lesterchan/wp-print "https://github.com/lesterchan/wp-print")
+[https://github.com/lesterchan/wp-print](https://github.com/lesterchan/wp-print "https://github.com/lesterchan/wp-print")
 
 = Translations =
-* [http://dev.wp-plugins.org/browser/wp-print/i18n/](http://dev.wp-plugins.org/browser/wp-print/i18n/ "http://dev.wp-plugins.org/browser/wp-print/i18n/")
+[http://dev.wp-plugins.org/browser/wp-print/i18n/](http://dev.wp-plugins.org/browser/wp-print/i18n/ "http://dev.wp-plugins.org/browser/wp-print/i18n/")
 
 = Credits =
+* Plugin icon by [SimpleIcon](http://www.simpleicon.com) from [Flaticon](http://www.flaticon.com)
 * Icons courtesy of [FamFamFam](http://www.famfamfam.com/)
-* __ngetext() by [Anna Ozeritskaya](http://hweia.ru/)
-* Right-to-left language support by [Kambiz R. Khojasteh](http://persian-programming.com/)
-* Do Not Print idea by [Robert "Nilpo" Dunham](http://www.nilpo.com/)
 
 = Donations =
 I spent most of my free time creating, updating, maintaining and supporting these plugins, if you really love my plugins and could spare me a couple of bucks as my school allowance, I will really appreciate it. If not feel free to use it without any obligations. Thank You. My Paypal account is lesterchan@gmail.com.
@@ -58,8 +57,7 @@ Once installed take the following steps to set it up:
 
 1. Admin Print Options
 2. Print Post Link
-3. Print Page link
-4. Print Page
+3. Print Page
 
 == Frequently Asked Questions ==
 
@@ -92,6 +90,16 @@ if(function_exists('wp_print')) {
 
 
 == Changelog ==
+
+= 2.55 =
+* NEW: Bump to 4.1
+* FIXED: get_the_category_list() optional secondary argument
+* FIXED: Replace font with p
+
+= 2.54 =
+* NEW: Finally there is custom post type support. Props [nimmolo](http://andrewnimmo.org/ "nimmolo").
+* NEW: Allow Multisite Network Activate
+* NEW: Uses WordPress uninstall.php file to uninstall the plugin
 
 = 2.53 =
 * FIXED: Use get_stylesheet_directory() instead of TEMPLATEPATH
